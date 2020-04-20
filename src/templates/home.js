@@ -67,7 +67,7 @@ export default function HomeTemplate({
           paddingBottom={12}
           paddingX={8}
           style={{
-            backgroundColor: theme.palette.primary.main,
+            backgroundColor: theme.palette.primary.light,
             color: theme.palette.common.white,
             clipPath: 'polygon(0 0, 100% 0, 100% 60%, 0% 100%)',
             '-webkit-clip-path': 'polygon(0 0, 100% 0, 100% 60%, 0% 100%)',
