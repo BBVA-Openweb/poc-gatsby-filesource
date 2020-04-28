@@ -29,7 +29,7 @@ module.exports = {
         groups: ['builtin', 'external', 'internal'],
         pathGroups: [
           {
-            pattern: 'react',
+            pattern: 'react' | 'prop-types',
             group: 'external',
             position: 'before',
           },

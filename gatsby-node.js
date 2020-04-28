@@ -3,12 +3,6 @@ const path = require('path');
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions;
 
-  // 404
-  createPage({
-    component: `${__dirname}/src/content/pages/404.js`,
-    path: '/404.html',
-  });
-
   // Get the template config settings.
   const {
     data: {

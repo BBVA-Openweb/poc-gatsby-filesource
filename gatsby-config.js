@@ -1,8 +1,9 @@
 module.exports = {
+  pathPrefix: '/poc-gatsby-filesource',
   siteMetadata: {
-    title: `Openweb v2`,
-    siteUrl: `https://openweb.bbva`,
-    description: `Openweb home page, blog and link to control panel`,
+    title: 'Openweb v2',
+    siteUrl: 'https://openweb.bbva',
+    description: 'Openweb home page, blog and link to control panel',
     components: {
       appbar: {
         position: 'sticky',
@@ -111,27 +112,27 @@ module.exports = {
     },
   },
   plugins: [
-    `gatsby-plugin-material-ui`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-material-ui',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-mdx`,
+      resolve: 'gatsby-plugin-mdx',
       options: {
-        extensions: [`.mdx`, `.md`],
+        extensions: ['.mdx', '.md'],
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `markdown-pages`,
-        path: `src/content/pages`,
+        name: 'markdown-pages',
+        path: 'content/pages',
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `markdown-posts`,
-        path: `src/content/posts`,
+        name: 'markdown-posts',
+        path: 'content/posts',
       },
     },
     {
@@ -149,22 +150,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `Openweb`,
-        short_name: `Openweb`,
-        start_url: `/`,
-        background_color: `rebeccapurple`,
-        theme_color: `rebeccapurple`,
-        display: `standalone`,
-        icon: `src/images/favicon.png`,
-      },
-    },
-    {
-      resolve: `gatsby-source-mongodb`,
-      options: {
-        dbName: `webpublicas`,
-        collection: [`projects`, `users`, `jobs`, `departments`],
+        name: 'Openweb',
+        short_name: 'Openweb',
+        start_url: '/',
+        background_color: 'rebeccapurple',
+        theme_color: 'rebeccapurple',
+        display: 'standalone',
+        icon: 'src/images/favicon.png',
       },
     },
   ],
