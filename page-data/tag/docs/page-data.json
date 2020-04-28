@@ -1,0 +1,1 @@
+{"componentChunkName":"component---src-templates-tag-js","path":"/tag/docs","result":{"data":{"site":{"siteMetadata":{"templates":{"posts":{"pathPrefix":"posts","filters":{"tag":{"pathPrefix":"tag"}}}}}},"allMdx":{"edges":[]}},"pageContext":{"tag":"docs","limit":3}}}
