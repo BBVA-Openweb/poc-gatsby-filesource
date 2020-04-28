@@ -9,7 +9,7 @@ import Link from './Link';
 const useStyles = makeStyles((theme) => ({
   footer: {
     color: theme.palette.common.white,
-    backgroundColor: theme.palette.grey[900],
+    backgroundColor: theme.palette.primary.dark.toString(),
     '& a': {
       color: theme.palette.grey[300],
       textDecoration: 'none',
@@ -45,9 +45,8 @@ const FooterColumns = ({ columns }) => (
   </Grid>
 );
 
-export default () => {
+const Footer = () => {
   const classes = useStyles();
-
   return (
     <StaticQuery
       query={graphql`
@@ -95,3 +94,6 @@ export default () => {
     />
   );
 };
+Footer.displayName = 'Footer';
+
+export default Footer;
